@@ -30,17 +30,17 @@ and window_size = 30.
 ● Then we observe the total rewards, cost and total money achieved at each
 iteration starting from 10 to 200 with a checkpoint at every 10 iterations.
 ● We found out that at 200th iteration , we have
-achieved a reward of around 75$ and total money rose to 10,075$. (testing the
+achieved a reward of around 132.6$ and total money rose to 10,132.6$. (testing the
 dataset)
 ● I had no problems to implement this step.
 
 Para 5:
 ● Fifth, now we are testing the agent showcasing every stock we bought, sold or
 hold on to with its connected investment and total balance after the action.
-● Now, at the end of 730 days, we have achieved a total balance of around 9979$
-with a loss of 21$. (Jan 2018 to Dec 2019)
-● But in the long run, after 2264 days, we have achieved a total balance of 10,077$
-with a total profit of 77.
+● Now, at the end of 200 days, we have achieved a total balance of around 10,014.600018$
+with a profit of 14.600018$. 
+● But in the long run, after 2252 days, we have achieved a total balance of 10,010.329$
+with a total profit of 10.329$.
 ● This step took a long time to implement. At one point, I thought it was in an
 infinite loop, but then after a very long time, it actually gave results.
 
