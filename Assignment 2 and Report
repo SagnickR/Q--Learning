@@ -1,0 +1,49 @@
+● Assignment 2
+
+Para 1:
+● Firstly, I  imported all the relevant libraries like numpy, pandas, matplotlib.pyplot,
+seaborn, tensorflow, etc.
+● I had to create a separate environment for tensorflow and download all the
+libraries in this new environment in order to use tensorflow.
+
+Para 2:
+● Secondly, now I fetch the required data of “CAT” (January 2009 to
+December 2017) from yahoo finance.
+● This step gave some errors. It took me a while to figure it out, but eventually I did.
+
+Para 3:
+● Third, now I defined our Q-Learning Agent using Greedy Epsilon scheme.
+● . I defined the hyper parameters like discount factor (gamma), epsilon decay.
+● Then I defined the conditions for exploration-exploitation.
+● Then, I got the states. Following that, I defined a replay function which stores a
+mini batch of data which will help improve my DQN even further.
+● Followed by, i defined my buy function, in which I defined three conditions
+which leads to our DQN signalling buy, sell or hold.
+● Lastly, I defined our train function, which will be used later on to train my agent.
+● There were some logical errors and conditional errors that I had to deal with, and
+I tried to play around with hyper-parameters to make the model more efficient,
+but after about an 1 hour of debugging, it was up and running.
+
+Para 4:
+● Fourth, now we train our dataset using initial_money of 10,000$, batch_size = 32
+and window_size = 30.
+● Then we observe the total rewards, cost and total money achieved at each
+iteration starting from 10 to 200 with a checkpoint at every 10 iterations.
+● We found out that at 200th iteration , we have
+achieved a reward of around 75$ and total money rose to 10,075$. (testing the
+dataset)
+● I had no problems to implement this step.
+
+Para 5:
+● Fifth, now we are testing the agent showcasing every stock we bought, sold or
+hold on to with its connected investment and total balance after the action.
+● Now, at the end of 730 days, we have achieved a total balance of around 9979$
+with a loss of 21$. (Jan 2018 to Dec 2019)
+● But in the long run, after 2264 days, we have achieved a total balance of 10,077$
+with a total profit of 77.
+● This step took a long time to implement. At one point, I thought it was in an
+infinite loop, but then after a very long time, it actually gave results.
+
+Part 6:
+● Sixth, now we are plotting all our signals and showcasing our plot in the end.
+● This step was implemented without any problems.
